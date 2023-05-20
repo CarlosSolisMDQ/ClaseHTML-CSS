@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {text-align: center; background-color: #d7dade;}
+    .info {list-style: none;text-align: center;
+  list-style-position: inside;}
+    ol {list-style: none;list-style-position: inside;
+    padding-left: inherit;}
+    li {list-style: none;}
+    
+
+    ol > li::before {
+        content: "\A";
+        white-space: pre;
+    }
+
+    #name {
+        font-size: 30px;
+    }
+
+</style>
+
+<body>
+
+    <div id="encabezado">
+        <p id="name">Carlos Solis</p>
+        <img src="./fotomia.jpeg" alt="Foto retrato" style="max-width:150px; height: auto;">
+        
+    </div>
+    
+        <div class="info">
+            <ol class="">
+                <li id="margen-top"><a href="#About"><span>Acerca de mí</span></a></li>
+                <li id="margen-top"><a href="#Objetivo"><span>Objetivo</span></a></li>
+                <li id="margen-top"><a href="#Estudios"><span>Estudios</span></a></li>
+                
+                <li id="margen-top"><a href="#Contacto"><span>Contacto</span></a></li>
+                <li id="margen-top"><a href="#Social"><span>Social Media</span></a></li>
+            </ol>   
+        </div>   
+    
+    
+        <div class="content">
+            <div name="Objetivo">
+            <h4>Objetivo</h4>
+            <p>Ampliar mis opciones laborales.</p>
+            </div>
+            <h4>Experiencia</h4>
+            <p>¿En sistemas? Ninguna registrada en blanco, solo periodos cortos trabajando en negro de onda ademas de muchos cursos y capacitaciones</p>
+            
+            <div name="Estudios">
+            <ul>
+                <li>Fui el primer año de la tecnicatura de programacion en la UTN y empezó la pandemia y despues no retomé.</li>
+                <li>Hice Argentina Programa, el curso del ministerio de desarrollo productivo, las dos etapas.</li>
+                <li>Hice un curso de ingles del Argentina Programa y un curso introductorio de data gobernance.</li>
+                <li>Hice los primeros tres certificados de freecodecamp.</li>
+                <li>Leí muchos libros de sistemas, jugué/estudié mucho tiempo en HacktheBox y Hackerrank.</li>
+                <li>Tengo unos cuantos badges de Udemy pero ni los cuento porque no valen nada, son como un premio al "bu8en compañero" casi.</li>
+            </ul>
+        </div>
+            <h4>Habilidades</h4>
+            <p>Lenguajes: <span>JavaScript</span>, <span>Java</span>, <span>sql</span> <span>C y C++ (si no queda otra)</span></span></p>
+        <p>(obvio, todos a nivel principiante o principiante avanzado)</p>
+        </div>
+    
+    <div id="footer">
+        <div name="Contacto">
+            <p id="telefono"><span>Cel: **********</span></p>
+            <a href="mailto:*******@gmail.com">*******@gmail.com</a>
+            
+
+        </div>
+
+        <a name="Social" href="https://twitter.com/Carlos_s_w0w">Twitter</a>
+    </div>
+
+    
+</body>
+</html>
