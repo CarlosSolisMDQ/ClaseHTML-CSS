@@ -1,0 +1,36 @@
+code{
+    font-size: 2em;
+    color: red;
+    background-color: beige;
+ }
+
+ .claseEjemplo{
+    color: rgb(2, 231, 13);
+ }
+
+ #idEjemplo{
+    color: blueviolet;
+ }
+
+
+.claseEjemplo2{
+    font-size: 5em;
+    border: 2px solid black;
+}
+
+/*atributos*/
+
+[title=titulo3]{
+    font-size: 3em;
+}
+
+/*pseudoelementos*/
+
+li:nth-child(2){
+
+    color: red;
+}
+
+li:nth-child(even){
+    background-color: aquamarine;
+}

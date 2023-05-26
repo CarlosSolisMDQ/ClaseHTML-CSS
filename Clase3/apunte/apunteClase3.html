@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta title="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<!--se pueden declarar los estilos dentro de la cabecera como bloque de codigo en el documento-->
+
+<style>
+ 
+ 
+
+/*los comentarios en hojas de estilo usan este formato*/
+
+
+</style>
+
+<!--jerarquia de seleccion css
+
+etiqueta > clase > id > inline style > !important
+
+
+-->
+
+<!--se puede linkear un documento de hoja de estilo con la etiqueta link
+aclarando en el REL que es una hoja de estilo-->
+
+<link rel="stylesheet" href="./styles.css">
+
+
+</head>
+<body>
+
+    <!--hojas de estilo-->
+
+    1.- forma inline (dentro de la etiqueta)
+    <br>
+    2.- dentro del documento (se declara en el head dentro de la etiqueta style)
+    <br>
+    3.- documento aparte, como hojaEjemplo.css. link al documento html
+    <br>
+    <!-- selector por clase-->
+    <code class="claseEjemplo" id="idEjemplo">
+        .classtitle{
+            atributo: valor;
+        }
+    </code>
+    <br>
+
+    <!--selector por id-->
+
+    <code>
+        #idtitle{
+            atributo: valor:
+        }
+    </code>
+    <br>
+    <!--selector de etiqueta-->
+
+    <code >
+        p{
+            atributo: valor;
+        }
+    </code>
+    <br>
+    <!--formato inline-->
+
+    <div style="color: rgb(229, 255, 0); background-color: blue;">prueba...</div>
+    <br>
+    <!--formatos de colores-->
+    
+        ingles - rgb(rojo, verde, azul) > 0 -255
+        hex #rrggbb > 0-9 a-f RGBA(rojo, verde, azul, alpha) > alpha > 0
+        <!--alpha define la opacidad del color-->
+    
+    
+    
+    <p style="color: blue">prueba color 1</p>
+    <p style="color: #aa0e43">prueba color 2</p>
+    <p style="color: rgb(2,255,0,1)">color prueba 3</p>
+
+    <!--unidades de medida de longitudes-->
+
+    <!--absolutas-->
+    
+        <p>
+            cm > centimetros
+            mm > milimetros
+            in > pulgadas
+            px > pixeles
+            pt > points
+        </p>
+    
+
+    <!--relativas-->
+<br>
+    
+        <p class="claseEjemplo2">
+            vm > viewport width
+            vh > viewport height
+            %
+            em, rem > fuentes
+        </p>
+
+ 
+<!--uso de atributos-->
+
+        <h1 title="titulo">uno</h1><br>
+        <h1 title="titulo2">dos</h1><br>
+        <h1 title="titulo3">tres</h1><br>
+    
+
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+        </ul>
+
+</body>
+</html>
