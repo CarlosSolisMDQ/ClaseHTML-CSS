@@ -1,0 +1,46 @@
+.body {
+    padding: 0;
+    margin:  0;
+    box-sizing: border-box;
+    
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+
+}
+
+.labels {
+    width: 100%;
+    height: 20%;
+    border: 1px solid red;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    height: 70%;
+    background-color: black;
+    
+}
+
+.rectangulo1 {
+    width: 400px;
+    height: 400px;
+    background-color: cadetblue;
+    border: 1px solid red;
+    margin: 0 auto;
+}
+
+.rectangulo2 {
+    width: 400px;
+    height: 400px;
+    background-color: cadetblue;
+    border: 1px solid red;
+    margin: 0 auto;
+}
+

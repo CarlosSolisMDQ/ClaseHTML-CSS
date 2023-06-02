@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tarea del pdf clase 5 - mar del plata programa</title>
+    <link rel="stylesheet" href="./formulario.css" />
+  </head>
+  <body>
+    <div class="container">
+        <div class="labels">
+            <h1>Tarea del pdf clase 5 - carlos solis</h1>
+            <h3>Mar del Plata Programa</h3>
+        </div>
+      <div class="content">
+        <form action="" method="get" id="form1">
+          <!--uso un metodo get para que se vea en la url la peticion, por comodidad para el ejemplo-->
+          <label for="fname">NOMBRE</label>
+          <input type="text" id="fname" name="fname" />
+          <label for="lname">APELLIDO</label>
+          <input type="text" id="lname" name="lname" />
+          <label for="age">EDAD</label>
+          <input type="number" id="age" name="age" min="1" max="99" />
+        </form>
+        <div class="button1">
+          <button type="submit" form="form1" value="submit">SUBMIT</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
