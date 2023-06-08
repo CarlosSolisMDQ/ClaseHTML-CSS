@@ -1,63 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pizza place</title>
-    <link rel="stylesheet" href="./styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <!--Tarea del laboratorio pagina para una pizzería, se entrega el viernes-->
 
     <!-- WIP, hice la maquetacion grosera, old fashion way, todo con bordes de colores, usando los elementos que vimos en el curso hasta ahora. Agregué las listas y los anchor, puse un placeholder para la imagen para el logo. Le di un scroll a la lista de elementos ordenados en renglones-->
 
     <div class="content">
-        <header>
-            <nav>
-                <ol>
-                    <li><a href="#opcion1">opcion 1</a></li>
-                    <li><a href="#opcion2">opcion 2</a></li>
-                    <li><a href="#opcion3">opcion 3</a></li>
-                </ol>
-            </nav>
-            <img src="https://dummyimage.com/100x100/b5b5b5/030003.jpg" alt="logo-pizzeria">
-        </header>        
-        <aside>
-            <ol>
-                <li><a href="#opcion1">opcion 1</a></li>
-                <li><a href="#opcion2">opcion 2</a></li>
-                <li><a href="#opcion3">opcion 3</a></li>
-            </ol>
-        </aside>
-        <main>
-            <div class="cards">
-                <h1 id="opcion1">opcion 1</h1>
-                <div class="row" >
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
-                </div>
-                <h1 id="opcion2">opcion 2</h1>
-                <div class="row" >
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
-                </div>
-                <h1 id="opcion3">opcion 3</h1>
-                <div class="row" >
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
-                </div>
+      <header>
+        <nav>
+          <ol>
+            <li><a href="#opcion1">Pizza Italiana</a></li>
+            <li><a href="#opcion2">Pizza Japonesa</a></li>
+            <li><a href="#opcion3">Muzzarela sin vueltas</a></li>
+          </ol>
+        </nav>
+        <img src="./img/pizzerialoshdp.jpg" alt="logo-pizzeria" />
+      </header>
+      <aside>
+        <ol>
+          <li><a href="#opcion1">Pizza Italiana</a></li>
+          <li><a href="#opcion2">Pizza Japonesa</a></li>
+          <li><a href="#opcion3">Muzzarela sin vueltas</a></li>
+        </ol>
+      </aside>
+      <main>
+        <div class="cards">
+          <h1 id="opcion1">Italiana</h1>
+          <div class="row">
+            <div class="card">
+              <div class="card-imagen1">
+                <img src="https://placehold.co/300x300" alt="pizza1" />
+                <p class="precio">600</p>
+              </div>
+              <div class="descrition">Marinara</div>
+              <button>Añadir al Carrito</button>
             </div>
-
-        </main>
-        <footer>
-
-        </footer>
+            <div class="card">
+              <div class="card-imagen2">
+                <img src="https://placehold.co/300x300" alt="pizza2" />
+                <p class="precio">850</p>
+              </div>
+              <div class="descrition">Prosciutto</div>
+              <button>Añadir al Carrito</button>
+            </div>
+            <div class="card">
+              <div class="card-imagen3">
+                <img src="https://placehold.co/300x300" alt="pizza3" />
+                <p class="precio">1200</p>
+              </div>
+              <div class="descrition">Capricciosa</div>
+              <button>Añadir al Carrito</button>
+            </div>
+          </div>
+          <h1 id="opcion2">Japonesa</h1>
+          <div class="row">
+            <div class="card">
+              <div class="card-imagen4">
+                <img src="https://placehold.co/300x300" alt="pizza4" />
+                <p class="precio">750</p>
+              </div>
+              <div class="descrition">Okonomiyaki</div>
+              <button>Añadir al Carrito</button>
+            </div>
+            <div class="card">
+              <div class="card-imagen5">
+                <img src="https://placehold.co/300x300" alt="pizza5" />
+                <p class="precio">800</p>
+              </div>
+              <div class="descrition">Okonomiyaki sin huevo</div>
+              <button>Añadir al Carrito</button>
+            </div>
+            <div class="card">
+              <div class="card-imagen6">
+                <img src="https://placehold.co/300x300" alt="pizza6" />
+                <p class="precio">1200</p>
+              </div>
+              <div class="descrition">Okonomiyaki con morron</div>
+              <button>Añadir al Carrito</button>
+            </div>
+          </div>
+          <h1 id="opcion3">Muzza sin vueltas</h1>
+          <div class="row">
+            <div class="card">
+              <div class="card-imagen7">
+                <img src="https://placehold.co/300x300" alt="pizza7" />
+                <p class="precio">500</p>
+              </div>
+              <div class="descrition">Con aceitunas</div>
+              <button>Añadir al Carrito</button>
+            </div>
+            <div class="card">
+              <div class="card-imagen8">
+                <img src="https://placehold.co/300x300" alt="pizza8" />
+                <p class="precio">700</p>
+              </div>
+              <div class="descrition">Aceituna y Morron</div>
+              <button>Añadir al Carrito</button>
+            </div>
+            <div class="card">
+              <div class="card-imagen9">
+                <img src="https://placehold.co/300x300" alt="pizza9" />
+                <p class="precio">1200</p>
+              </div>
+              <div class="descrition">Aceituna, Morron y Jamon</div>
+              <button>Añadir al Carrito</button>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div class="datos-empresa">
+          <p>Pizzería los HDP</p>
+        </div>
+        <div class="icons">
+          <a href="#"><img src="./icons/twitter.svg" /></a>
+          <a href="#"><img src="./icons/facebook.svg" /></a>
+          <a href="#"><img src="./icons/instagram.svg" /></a>
+        </div>
+      </footer>
     </div>
-    
-</body>
+  </body>
 </html>
