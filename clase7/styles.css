@@ -18,7 +18,7 @@ html  {
     margin-right: auto;
     
     height: 100vh;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     width: 60%;
 }
 
@@ -26,7 +26,7 @@ html  {
     display: flex;
     flex-direction: row;
     height: 90vh;
-    border: 1px solid green;
+    /*border: 1px solid green;*/
 }
 
 .content .seccion-superior aside {
@@ -71,7 +71,7 @@ html  {
 .content .seccion-superior main .caratula {
     display: flex;
     flex-direction: column;
-    background-color: aquamarine;
+    /*background-color: aquamarine;*/
     margin-bottom: 0.7em;
 }
 
@@ -87,14 +87,14 @@ html  {
 }
 
 .content .seccion-superior .articles {
-    border: 1px solid blue;
+    /*border: 1px solid blue;*/
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
 .content .seccion-superior .articles article {
-    border: 1px solid orange;
+    /*border: 1px solid orange;*/
     width: 25%;
 
 }
