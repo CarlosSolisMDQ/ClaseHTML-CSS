@@ -1,0 +1,127 @@
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+html  {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+
+}
+
+.content {
+    margin-left: auto;
+    margin-right: auto;
+    
+    height: 100vh;
+    border: 1px solid red;
+    width: 60%;
+}
+
+.content .seccion-superior {
+    display: flex;
+    flex-direction: row;
+    height: 90vh;
+    border: 1px solid green;
+}
+
+.content .seccion-superior aside {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content .seccion-superior aside nav img {
+    width: 90%;
+}
+
+.content .seccion-superior aside nav ol {
+    margin-top: 3em;
+    list-style: none;
+}
+
+.content .seccion-superior aside nav ol li {
+    padding: 1em;
+}
+
+.content .seccion-superior aside .nav-buttons h4 {
+    margin-top: 2em;
+    text-align: center;
+}
+
+.content .seccion-superior aside .nav-buttons button {
+    width: 100%;
+    height: 2em;
+
+}
+.content .seccion-superior aside .nav-buttons p {
+    width: 100%;
+    text-align:center;
+
+}
+
+.content .seccion-superior main {
+    width: 80%;
+}
+
+.content .seccion-superior main .caratula {
+    display: flex;
+    flex-direction: column;
+    background-color: aquamarine;
+    margin-bottom: 0.7em;
+}
+
+.content .seccion-superior main .caratula img {
+    width: 100%;
+    
+}
+
+.content .seccion-superior .caratula .subscribe {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.content .seccion-superior .articles {
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.content .seccion-superior .articles article {
+    border: 1px solid orange;
+    width: 25%;
+
+}
+
+.content .seccion-superior .articles article .container-article {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer .rrss-icons {
+    padding: 0em;
+}
+
+
+footer .rrss-icons i {
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.5em;
+    font-size: 3em;
+}
+
+
