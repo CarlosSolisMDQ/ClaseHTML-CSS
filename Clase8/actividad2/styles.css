@@ -1,0 +1,93 @@
+*, html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    height: 100vh;
+    border: 1px solid red;
+}
+
+.container {
+    width: 800px;
+    height: 500px;
+    border: 2px solid orange;
+    border-radius: 5px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    gap: 0px 0px;
+    background-color: chocolate; 
+    
+}
+
+.one {
+    grid-column: 1 / 4;
+    grid-row: 1 / 3 ;
+    padding: 25px;
+    width: 100%;
+    background-color: white;
+}
+
+.one div {
+    position: relative;
+    height: 30%;
+    border: 2px solid orange;
+    width: 100%;
+    background-color: white;
+    align-items: center;
+    
+    
+}
+
+.b, .a, .c {
+    margin: 5px; border: 2px solid orangered;
+    
+}
+
+.one div p {
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    
+}
+
+.two {
+    grid-column: 1 / 2;
+    grid-row: 3 / 5 ;
+    border: 2px solid orange;
+    background-color: white;
+}
+
+.three {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4 ;
+    border: 2px solid orange;
+    background-color: white;
+}
+
+.four {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4 ;
+    border: 2px solid orange;
+    background-color: white;
+}
+
+.five {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5 ;
+    border: 2px solid orange;
+    background-color: white;
+}
+
+
+
