@@ -1,0 +1,156 @@
+*, html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: grey;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid blue;
+    height: 12%;
+    background-color: rgb(59, 52, 52);
+}
+
+header nav {
+    margin-left: 4em;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+header nav ol {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+header nav ol li {
+    margin-left: 2em;
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    height: 79vh;
+    border: 1px solid rgb(71, 33, 18);
+    margin-top: 0.5em;
+}
+
+main .productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    justify-items: center;
+    align-items: center;
+    height: 70%;
+}
+
+main .productos .card {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    height: 100%;
+    border: 1px solid yellow;
+    background-color: rgb(68, 66, 66);
+
+}
+
+main .productos .card .image-card {
+    position: relative;
+}
+
+main .productos .card .image-card img {
+    width: 100%;
+    height: auto;
+}
+
+main .productos .card .image-card h2 {
+    position: absolute;
+    left: 0%;
+    bottom: 3%;
+}
+
+main .productos .card .card-description {
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+
+main .productos .card .card-description i {
+    margin-right: 0.5em;
+    font-size: 1.2em;
+    color: white;
+}
+
+main .productos .card .card-description i:hover {
+    color: red;
+}
+
+main .galeria {
+    display: flex;
+    flex-direction: row;
+    height: 20em;
+    margin-top: 0.5em;
+}
+
+main .galeria div {
+    width: 25%;
+    height: 100%;
+}
+
+main .galeria img {
+    padding: 0em;
+    width: 100%;
+    border: 1px solid brown;
+    
+    height: auto;
+}
+
+main .galeria img:hover {
+    border: 3px solid black;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    height: 7vh;
+    border: 1px solid red;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.2em;
+    background-color: rgb(65, 15, 15);
+}
+
+footer .subscribe {
+    display: flex;
+    flex-direction: row;
+    height: 1.5em;
+    margin-left: 4em;
+    
+}
+
+footer .subscribe label {
+    margin-right: 1em;
+    color: white;
+}
+
+footer .redes {
+    font-size: 3em;
+    display: flex;
+    flex-direction: row ;
+    margin-right: 4em;
+    border: 1px solid blueviolet;
+}
+
+footer .redes i {
+    color: white;
+    margin-left: 1em;
+}
