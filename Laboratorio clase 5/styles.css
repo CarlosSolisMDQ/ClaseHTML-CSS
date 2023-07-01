@@ -1,0 +1,29 @@
+*, html {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    
+}
+
+nav {
+    background-color: rgb(71, 116, 101);
+    
+}
+
+nav a {
+    color: white;
+}
+
+
+div {
+    border: solid 1px red;
+    
+}
+
+
+
