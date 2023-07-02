@@ -25,5 +25,47 @@ div {
     
 }
 
+#iconos-main {
+    height: 100%;
+}
+
+#iconos-main div {
+    height: 100%;
+}
+
+#galeria-productos {
+    height: 100%;
+}
+
+#galeria-productos div{
+    height: 100%;
+}
+
+footer {
+    height: 100%;
+    border: 1px solid blue;
+}
+
+footer div{
+    height: 50%;
+}
+
+#cards1 {
+    height: 100%;
+}
+
+#cards1>div{
+    
+    background-color: blueviolet;
+}
+
+#cards2 {
+    height: 100%;
+}
+
+#cards2>div{
+    
+    background-color: blueviolet;
+}
 
 
