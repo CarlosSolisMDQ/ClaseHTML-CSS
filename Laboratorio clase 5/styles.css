@@ -10,27 +10,47 @@ body {
     
 }
 
-nav {
-    background-color: rgb(71, 116, 101);
+#contenido {
+    background-color: #F2CCC3 !important;
+}
+
+#navigation {
+    background-color: rgb(71, 116, 101) !important;
     
 }
 
 nav a {
-    color: white;
+    color: white !important;
 }
 
 
 div {
-    border: solid 1px red;
+    /*border: solid 1px red;*/
     
 }
 
 #iconos-main {
     height: 100%;
+    padding: 3em;
+}
+#iconos-main i {
+    font-size: 150px;
+    padding-top: 0.5em;
+    
+}
+
+#iconos-main p {
+    margin-top: 1em;
 }
 
 #iconos-main div {
     height: 100%;
+    
+}
+
+#iconos-main i{
+    margin-right: 10px;
+    
 }
 
 #galeria-productos {
@@ -43,11 +63,18 @@ div {
 
 footer {
     height: 100%;
-    border: 1px solid blue;
+    /*border: 1px solid blue;*/
+    background-color: #F48498;
 }
 
 footer div{
-    height: 50%;
+    height: 100%;
+    color: #FFE6E8;
+}
+
+footer i {
+    font-size: 4em;
+    color: #FFE6E8;
 }
 
 #cards1 {
@@ -56,7 +83,7 @@ footer div{
 
 #cards1>div{
     
-    background-color: blueviolet;
+    /*background-color: blueviolet;*/
 }
 
 #cards2 {
@@ -65,7 +92,10 @@ footer div{
 
 #cards2>div{
     
-    background-color: blueviolet;
+    /*background-color: blueviolet;*/
 }
 
+#modal-body-text label{
+    color: green;
+}
 
