@@ -1,103 +1,92 @@
-*, html {
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
+*,
+html {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
 }
 
 body {
-    width: 100%;
-    height: 100%;
-    
+  width: 100%;
+  height: 100%;
 }
 
 #contenido {
-    background-color: #F2CCC3 !important;
+  background-color: #f2ccc3 !important;
 }
 
 #navigation {
-    background-color: rgb(71, 116, 101) !important;
-    
+  background-color: rgb(71, 116, 101) !important;
 }
 
 nav a {
-    color: white !important;
+  color: white !important;
 }
 
-
 div {
-    /*border: solid 1px red;*/
-    
+  /*border: solid 1px red;*/
 }
 
 #iconos-main {
-    height: 100%;
-    padding: 3em;
+  height: 100%;
+  padding: 3em;
 }
 #iconos-main i {
-    font-size: 150px;
-    padding-top: 0.5em;
-    
+  font-size: 150px;
+  padding-top: 0.5em;
 }
 
 #iconos-main p {
-    margin-top: 1em;
+  margin-top: 1em;
 }
 
 #iconos-main div {
-    height: 100%;
-    
+  height: 100%;
 }
 
-#iconos-main i{
-    margin-right: 10px;
-    
+#iconos-main i {
+  margin-right: 10px;
 }
 
 #galeria-productos {
-    height: 100%;
+  height: 100%;
 }
 
-#galeria-productos div{
-    height: 100%;
+#galeria-productos div {
+  height: 100%;
 }
-
-
 
 footer {
-    height: 100%;
-    /*border: 1px solid blue;*/
-    background-color: #F48498;
+  height: 100%;
+  /*border: 1px solid blue;*/
+  background-color: #f48498;
 }
 
-footer div{
-    height: 100%;
-    color: #FFE6E8;
+footer div {
+  height: 100%;
+  color: #ffe6e8;
 }
 
 footer i {
-    font-size: 4em;
-    color: #FFE6E8;
+  font-size: 4em;
+  color: #ffe6e8;
 }
 
 #cards1 {
-    height: 100%;
+  height: 100%;
 }
 
-#cards1>div{
-    
-    /*background-color: blueviolet;*/
+#cards1 > div {
+  /*background-color: blueviolet;*/
 }
 
 #cards2 {
-    height: 100%;
+  height: 100%;
 }
 
-#cards2>div{
-    
-    /*background-color: blueviolet;*/
+#cards2 > div {
+  /*background-color: blueviolet;*/
 }
 
-#modal-body-text label{
-    color: green;
+#modal-body-text label {
+  color: green;
 }
-
