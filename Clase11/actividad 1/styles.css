@@ -1,0 +1,25 @@
+*, html {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+div {
+    padding: 1em;
+    /*border: 1px solid red;*/
+    height: 100px;
+    
+}
+
+#box {
+    border: 5px solid red;
+    border-radius: 10px;
+    background-color: brown;
+}
+
+#box2 {
+    margin-top: 1em;
+    border: 5px solid red;
+    border-radius: 10px;
+    background-color: brown;
+}
