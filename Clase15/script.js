@@ -15,15 +15,19 @@ button.addEventListener('click', function(){
 });
 
 function addItem(arr){
-        
+        let p = document.createElement("p");
+        p.innerHTML = item.value;
+        console.log(p);
         let count = document.querySelectorAll("#elem-id")
         var division = document.createElement("div");
-        division.textContent = "Elemento numero: " + count.length + "  " +  item.value + "   ";
+        division.textContent = "Elemento numero: " + (count.length + 1);
+        division.append(p);
         division.id = "elem-id";
         const borrar = document.createElement("button");
         borrar.innerHTML ="borrar";
         borrar.setAttribute("onClick",'remove(this)');
         division.append(borrar);
+        division.setAttribute("class", "listaItem");
         document.getElementById("lista").append(division);
         //var borrar = document.createElement("button");
         
