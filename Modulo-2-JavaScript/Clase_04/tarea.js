@@ -86,6 +86,16 @@ add(arrayPersona, createPersona("JuanCarlos", "batman", 60, 3));
 
 console.table(arrayPersona);
 
+//promedio
+
+let sumatoria = arrayPersona.reduce((acc, next) => { return acc + next.age }, 0);
+
+let promedio = sumatoria / arrayPersona.length;
+
+
+
+console.log("promedio: " + promedio);
+
 
 let input = prompt(colors.yellow("Ingrese una busqueda: "));
 
