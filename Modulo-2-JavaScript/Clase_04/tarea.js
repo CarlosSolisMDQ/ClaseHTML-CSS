@@ -31,8 +31,7 @@ console.log(colors.brightMagenta(`
  * 
  *   mostrar el promedio de edades
  * 
- *   filtrar por nombre o apellido un valor ingresado por el usuario que coincida por letra o palabra                                                                                                         
- *                                                                                                            
+ *   filtrar por nombre o apellido un valor ingresado por el usuario que coincida por letra o palabra                                   
  *                                                                                                            
  *                                                                                                            
  */
