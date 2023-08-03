@@ -94,14 +94,14 @@ let promedio = sumatoria / arrayPersona.length;
 
 
 
-console.log("promedio: " + promedio);
+console.log(colors.bold("promedio: " + promedio));
 
 
 let input = prompt(colors.yellow("Ingrese una busqueda: "));
 
 
 let busqueda = arrayPersona.filter((elemento)=> {
-    if((elemento.firstName).includes(input) || (elemento.lastName).includes(input)){
+    if((elemento.firstName).includes(input.toLowerCase()) || (elemento.lastName).includes(input.toLowerCase())){
         return elemento;
     }
 });
