@@ -1,11 +1,5 @@
 
 
-
-
-
-
-
-
 let principal = document.getElementById("principal");
 
 let dataUser = [];
@@ -13,6 +7,7 @@ let dataUser = [];
 let id = 0;
 
 let credential = {email: "a", clave: "1"};
+
 
 
 
@@ -48,7 +43,7 @@ let createCookie = (name,pwds) =>{
 
   document.cookie = "name="+username+";path=/" + ";expires="+expire.toUTCString();
   document.cookie = "password="+encodeURI(pwd)+";path=/" + ";expires="+expire.toUTCString();
-  //can only write one entity at a time (name, pass)
+  
 }  
 
 
@@ -78,63 +73,63 @@ let loginFunction = ()=> {
 
   if (user == credential.email && pass == credential.clave){
     createCookie(user, pass);
-      principal.innerHTML = `
-      <nav class="navbar navbar-light bg-light">
-        <form class="form-inline ms-3">
-          <button class="btn btn-outline-success" type="button" onClick="logOut()">Logout</button>
-          
-        </form>
-      </nav>
-      <div class="container py-5 h-100">
-      <div class="row">
-          <div class="col-md-6">
-              <div class="row d-flex justify-content-center align-items-center h-100">
-              <div class="">
-                  <div class="card bg-dark text-white" style="border-radius: 1rem;">
-                  <div class="card-body p-5 text-center">
-                      <div class="mb-md-5 mt-md-4 pb-5">
-                      <h2 class="fw-bold mb-2 text-uppercase">form</h2>
-                      <p class="text-white-50 mb-5">Ingrese sus datos</p>
-                      <div class="form-outline form-white mb-4">
-                          <input type="text" id="nombre" required class="form-control form-control-lg" />
-                          <label class="form-label" for="nombre">nombre</label>
-                      </div>
-                      <div class="form-outline form-white mb-4">
-                          <input type="text" required id="apellido" class="form-control form-control-lg" />
-                          <label class="form-label" for="apellido">apellido</label>
-                      </div>
-              
-                      <button class="btn btn-outline-light btn-lg px-5" type="submit" onClick="clickAddUser()">add</button>
-              
-                      </div>
-              
-                  </div>
-                  </div>
-              </div>
-              </div>
-          </div>
-          
-          <div class="col-md-6">
-              <div class="mb-1">
-                  <input hidden id="search" onkeyup="filterInput()" class="form-control" placeholder="Ingrese parametro a buscar">
-              </div>
-              <table class="table table-striped table-hover table-bordered">
-                  <thead>
-                      <th>id</th>
-                      <th>NOMBRE</th>
-                      <th>APELLIDO</th>
-                      
-                      
-                  </thead>
-                  <tbody id="listUser">
-                  <tr>
-                      <td class="text-center" colspan="3" id="total">Sin registros</td>
-                  </tr> 
-                  </tbody>
-              </table>
-          </div>
-      </div>
-    </div>   `
+    principal.innerHTML = `
+    <nav class="navbar navbar-light bg-light">
+      <form class="form-inline ms-3">
+        <button class="btn btn-outline-success" type="button" onClick="logOut()">Logout</button>
+        
+      </form>
+    </nav>
+    <div class="container py-5 h-100">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="">
+                <div class="card bg-dark text-white" style="border-radius: 1rem;">
+                <div class="card-body p-5 text-center">
+                    <div class="mb-md-5 mt-md-4 pb-5">
+                    <h2 class="fw-bold mb-2 text-uppercase">form</h2>
+                    <p class="text-white-50 mb-5">Ingrese sus datos</p>
+                    <div class="form-outline form-white mb-4">
+                        <input type="text" id="nombre" required class="form-control form-control-lg" />
+                        <label class="form-label" for="nombre">nombre</label>
+                    </div>
+                    <div class="form-outline form-white mb-4">
+                        <input type="text" required id="apellido" class="form-control form-control-lg" />
+                        <label class="form-label" for="apellido">apellido</label>
+                    </div>
+            
+                    <button class="btn btn-outline-light btn-lg px-5" type="submit" onClick="clickAddUser()">add</button>
+            
+                    </div>
+            
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        
+        <div class="col-md-6">
+            <div class="mb-1">
+                <input hidden id="search" onkeyup="filterInput()" class="form-control" placeholder="Ingrese parametro a buscar">
+            </div>
+            <table class="table table-striped table-hover table-bordered">
+                <thead>
+                    <th>id</th>
+                    <th>NOMBRE</th>
+                    <th>APELLIDO</th>
+                    
+                    
+                </thead>
+                <tbody id="listUser">
+                <tr>
+                    <td class="text-center" colspan="3" id="total">Sin registros</td>
+                </tr> 
+                </tbody>
+            </table>
+        </div>
+    </div>
+   </div>   `;
   } else {
     Swal.fire({
       icon: 'error',
@@ -262,10 +257,10 @@ if(sessionStorage.getItem("status") != null){
     </div>
   </div>
 </div>
-</div>`
+</div>`;
 
-mail = getCookie("name");
-clave = getCookie("password");
+let mail = getCookie("name");
+let clave = getCookie("password");
 
 if(mail != null && clave != null){
 
@@ -301,6 +296,8 @@ const clickAddUser = () =>{
   sessionStorage.arrUser = JSON.stringify(dataUser);
   let usuarios = JSON.parse(sessionStorage.arrUser);
   listDataUser(dataUser);
+  document.getElementById("nombre").value = ""; 
+  document.getElementById("apellido").value = "";
   console.table(usuarios);
   
          
@@ -345,6 +342,7 @@ const deleteUser = (personId) =>{
     })
 
 }
+
 
 
 
