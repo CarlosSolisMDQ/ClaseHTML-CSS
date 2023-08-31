@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Memorama</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./juego.css">
+</head>
+
+<body>
+
+    
+    <div id="tablero">
+    </div>
+
+    <br>
+
+    <fieldset>
+        <legend>Seleccione el tamaño del tablero:</legend>
+      
+        <div>
+          <input type="radio" id="ocho" name="radio" value="ocho" checked />
+          <label for="ocho">8</label>
+        </div>
+      
+        <div>
+          <input type="radio" id="doce" name="radio" value="doce" />
+          <label for="doce">12</label>
+        </div>
+      
+        <div>
+          <input type="radio" id="veinte" name="radio" value="veinte" />
+          <label for="veinte">20</label>
+        </div>
+      </fieldset>
+
+      <br>
+
+    <div class="nuevo-juego" onclick="generarTablero()">
+        Nuevo Juego
+    </div>
+
+    <script src="./juego.js"></script>
+
+</body>
+
+</html>
