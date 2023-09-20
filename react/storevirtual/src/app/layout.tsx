@@ -2,6 +2,8 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Link from 'next/link'
+import { Navbar } from './components/nav-bar'
+import Whatsapp from "./components/whatsapp-button";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,15 +20,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        
-      <nav className='h-[56] flex justify-center items-center bg-indigo-700'>
-        <Link className='mx-8 font-bold' href="/">home</Link>
-        <Link className='mx-8' href="/about">about</Link>
-        <Link className='mx-8' href="/dashboard">dashboard</Link>
-        <Link className='mx-8' href="/contact">contact</Link>
-      </nav>
+      <Navbar />  
+      
+         
         {children}
-        
+      <Whatsapp />   
         </body>
     </html>
   )
